@@ -1,5 +1,5 @@
 # m5-atom-satellite
-Connect m5 Atom Matrix devies to Bitfocus Companion using the Satellite API
+Connect m5 Atom Matrix devices to Bitfocus Companion using the Satellite API.
 
 This is released as-is, in both Arduino Sketch format, as as a precompiled hex file.
 
@@ -13,6 +13,6 @@ esptool.py --chip ESP32 write_flash 0x0 m5-atom-satellite.hex
 ## Configuration
 On first boot, the Atom Matrix will create a WiFi network starting with 'm5Atom-' and a semi-unique code. Join this network and configure at IP 192.168.4.1 if the captive portal doesn't load automatically.
 
-If connection to WiFi fails, this will autostart, or it can be manually started by holding the button for 5 seconds if you are not connected to companion (when you see the 4 blue corner lights, they will turn purple to indicate portal reopened)
+If connection to WiFi fails, the portal will autostart. It can be manually started by holding the button for 5 seconds if you are not connected to companion (when you see the 4 blue corner lights, they will turn purple to indicate portal reopened). This is useful if you are connected to WiFi but need to change networks or Companion IP.
 
 The Config page lets you enter your Companion IP, port should remain at default for now.
