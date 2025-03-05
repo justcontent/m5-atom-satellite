@@ -16,3 +16,10 @@ On first boot, the Atom Matrix will create a WiFi network starting with 'm5Atom-
 If connection to WiFi fails, the portal will autostart. It can be manually started by holding the button for 5 seconds if you are not connected to companion (when you see the 4 blue corner lights, they will turn purple to indicate portal reopened). This is useful if you are connected to WiFi but need to change networks or Companion IP.
 
 The Config page lets you enter your Companion IP, port should remain at default for now.
+
+## RGB LED Connection
+You can add a RGB LED from Jaycar.com.au to the rear on the following pins to mirror the array:
+const int LED_PIN_RED   = 33;  // External LED red channel
+const int LED_PIN_GREEN = 22;  // External LED green channel
+const int LED_PIN_BLUE  = 19;  // External LED blue channel
+const int LED_PIN_GND   = 23;  // External LED ground pin
