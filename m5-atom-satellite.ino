@@ -15,7 +15,7 @@ PinButton btnAction(39);  //the "Action" button on the device
 Preferences preferences;
 
 /* USER CONFIG VARIABLES */
-char companion_host[40] = "192.168.20.96";  // Companion Server
+char companion_host[40] = "Companion IP";  // Companion Server
 char companion_port[6] = "16622";
 
 // Static IP config
